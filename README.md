@@ -10,7 +10,11 @@ The business statement for this capstone is to analyze population trends across 
 ### Key Tasks
 For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia). The credibility of this data is high because it was released directly from a government agency. The data contains the population of Malaysia by sex, age group and ethnicity recorded from 1970 to 2024. For this analysis, I will be using the data from 2014 to 2024.
 
-The first step is to extract the required data for the analysis.
+The first step is to extract the required data for the analysis. I will be using SQL for this task.
+![Image](https://github.com/user-attachments/assets/41d8e517-a5e3-4760-b224-b10200fa5854)
+
+After extracting the required data, this is how it looks like.
+
 
 * Download data and store it appropriately.
 * Identify how it’s organized.
