@@ -14,15 +14,9 @@ The first step is to extract the required data for the analysis. I will be using
 ![Image](https://github.com/user-attachments/assets/41d8e517-a5e3-4760-b224-b10200fa5854)
 
 After extracting the required data, this is how it looks like.
+![Image](https://github.com/user-attachments/assets/3be43d05-bdbd-4a75-8c8b-fa20bfd47795)
 
-
-* Download data and store it appropriately.
-* Identify how it’s organized.
-* Sort and filter the data.
-* Determine the credibility of the data
-
-### Deliverables
-A description of all data sources used 
+Now, I have the required data, I can proceed to the next analysis process.
 
 ## Data Analysis Process: Process :factory:
 ### Key Tasks
