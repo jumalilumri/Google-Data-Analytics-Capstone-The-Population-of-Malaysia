@@ -4,22 +4,19 @@ For my Google Data Analytics Capstone project, I choose Case Study 3: Follow you
 
 ## Data Analysis Process: Ask :question:
 ### Key Tasks
-1. Identify the business task
-2. Determine key stakeholders
-3. Choose a dataset
-
-### Deliverables
-A clear statement of the business task you have selected to investigate
+The business statement for this capstone is to analyze population trends across age groups in Malaysia from 2014 to 2024 to identify shifts that impact healthcare service demand. This analysis aims to support healthcare providers—including government agencies, private hospitals, and healthtech firms—in planning for age-specific services, such as elder care, chronic disease management, and pediatric care.
 
 ## Data Analysis Process: Prepare :construction_worker:
 ### Key Tasks
+For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia).
+
 * Download data and store it appropriately.
 * Identify how it’s organized.
 * Sort and filter the data.
 * Determine the credibility of the data
 
 ### Deliverables
-A description of all data sources used https://open.dosm.gov.my/data-catalogue/population_malaysia
+A description of all data sources used 
 
 ## Data Analysis Process: Process :factory:
 ### Key Tasks
