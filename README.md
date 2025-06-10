@@ -2,7 +2,7 @@
 ## Introduction
 For my Google Data Analytics Capstone project, I choose Case Study 3: Follow your own case study path. For this option, I will perform numerous real-world tasks of a junior data analyst by following the steps of the data analysis process: ask, prepare, process, analyze, share, and act. I will answer the key tasks and the deliverables for each process given in the Case Study 3 packet.
 
-## Data Analysis Process: Ask
+## Data Analysis Process: Ask :question:
 ### Key Tasks
 1. Identify the business task
 2. Determine key stakeholders
@@ -11,7 +11,7 @@ For my Google Data Analytics Capstone project, I choose Case Study 3: Follow you
 ### Deliverables
 A clear statement of the business task you have selected to investigate
 
-## Data Analysis Process: Prepare
+## Data Analysis Process: Prepare :construction_worker:
 ### Key Tasks
 ● Download data and store it appropriately.
 ● Identify how it’s organized.
@@ -21,7 +21,7 @@ A clear statement of the business task you have selected to investigate
 ### Deliverables
 A description of all data sources used https://open.dosm.gov.my/data-catalogue/population_malaysia
 
-## Data Analysis Process: Process
+## Data Analysis Process: Process :factory:
 ### Key Tasks
 ● Check the data for errors.
 ● Choose your tools.
@@ -31,7 +31,7 @@ A description of all data sources used https://open.dosm.gov.my/data-catalogue/p
 ### Deliverables
 Documentation of any cleaning or manipulation of data
 
-## Data Analysis Process: Analyze
+## Data Analysis Process: Analyze :mag:
 ### Key Tasks
 ● Aggregate your data so it’s useful and accessible.
 ● Organize and format your data.
@@ -42,7 +42,7 @@ Documentation of any cleaning or manipulation of data
 ### Deliverables
 A summary of your analysis
 
-## Data Analysis Process: Share
+## Data Analysis Process: Share :bar_chart:
 ### Key Tasks
 ● Determine the best way to share your findings.
 ● Create effective data visualizations.
@@ -52,7 +52,7 @@ A summary of your analysis
 ### Deliverables
 Supporting visualizations and key findings
 
-## Data Analysis Process: Act
+## Data Analysis Process: Act :rocket:
 ### Key Tasks
 ● Create your portfolio.
 ● Add your case study.
