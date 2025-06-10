@@ -13,10 +13,10 @@ A clear statement of the business task you have selected to investigate
 
 ## Data Analysis Process: Prepare :construction_worker:
 ### Key Tasks
-Download data and store it appropriately.
-Identify how it’s organized.
-Sort and filter the data.
-Determine the credibility of the data
+* Download data and store it appropriately.
+* Identify how it’s organized.
+* Sort and filter the data.
+* Determine the credibility of the data
 
 ### Deliverables
 A description of all data sources used https://open.dosm.gov.my/data-catalogue/population_malaysia
