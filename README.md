@@ -3,11 +3,9 @@
 For my Google Data Analytics Capstone project, I choose Case Study 3: Follow your own case study path. For this option, I will perform numerous real-world tasks of a junior data analyst by following the steps of the data analysis process: ask, prepare, process, analyze, share, and act. I will answer the key tasks and the deliverables for each process given in the Case Study 3 packet.
 
 ## Data Analysis Process: Ask :question:
-### Key Tasks
 The business statement for this capstone is to analyze population trends across age groups in Malaysia from 2014 to 2024 to identify shifts that impact healthcare service demand. This analysis aims to support healthcare providers—including government agencies, private hospitals, and healthtech firms—in planning for age-specific services, such as elder care, chronic disease management, and pediatric care.
 
 ## Data Analysis Process: Prepare :construction_worker:
-### Key Tasks
 For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia). The credibility of this data is high because it was released directly from a government agency. The data contains the population of Malaysia by sex, age group and ethnicity recorded from 1970 to 2024. For this analysis, I will be using the data from 2014 to 2024.
 
 The first step is to extract the required data for the analysis. I will be using SQL for this task.
@@ -19,7 +17,8 @@ After extracting the required data, this is how it looks like.
 Now, I have the required data, I can proceed to the next analysis process.
 
 ## Data Analysis Process: Process :factory:
-### Key Tasks
+Based on my business statement, this analysis will focused on the age groups. Therefore, I would need to do some cleaning and transformation before I can analyze it.
+
 * Check the data for errors.
 * Choose your tools.
 * Transform the data so you can work with it effectively.
