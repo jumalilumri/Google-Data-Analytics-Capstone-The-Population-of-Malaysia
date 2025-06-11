@@ -58,8 +58,9 @@ The result.
 #### Summary of analysis
 1. The total of population for older adults (aged 60 and above) in Malaysia is steadily increasing.
 2. Based on the differences of the older adults total population from year to year, the average growth is around 3.9%.
-3. From my observation, there's a decline in 2020, possibly due to the Covid-19 pandemic.
-4. 
+3. The age group 60-64 is the highest and the age group 85+ is the lowest.
+4. A steady increase of population on all age group since 2014.
+5. A decline in 2020 on all age group most likely due to the Covid-19 pandemic.
 
 ## Data Analysis Process: Share :bar_chart:
 ### Key Tasks
