@@ -12,7 +12,7 @@ For this analysis, I will be using the public data available from government age
 
 Based on my business statement, this analysis will focused on the older adults (aged 60 and above) age group from 2014 to 2024. Therefore, I would need to process my data to match the requirement.
 
-1. My first step is to extract the requirement.
+### 1. My first step is to extract the requirement.
 ![sql_data_preparation](https://github.com/user-attachments/assets/68aba32b-bada-4a03-b12e-537086289abb)
 
 In this step, I extract the required year which is from 2014 to 2024. I also populate only require both for sex and overall for ethnicity because my focus is on the age group.
@@ -20,13 +20,26 @@ In this step, I extract the required year which is from 2014 to 2024. I also pop
 After running the query, this is how it looks like.
 ![data_data_preparation](https://github.com/user-attachments/assets/c12e8fae-801d-49ff-ba5a-d22a6a3c2048)
 
-2. Next, I need the data for the specific age group. For this analysis, I need the older adult (aged 60 and above). Therefore, I filtered only the necessary age group which are 60-64, 65-69, 70-74, 75-79, 80-84, 80+.
+### 2. Next, I need the data for the specific age group. For this analysis, I need the older adult (aged 60 and above). Therefore, I filtered only the necessary age group which are 60-64, 65-69, 70-74, 75-79, 80-84, 80+.
 ![sql_data_preparation_02](https://github.com/user-attachments/assets/5c4ff01e-a790-4724-a6c0-2f13e6a2a94f)
 
-This is the data that I will be working with.
+After filtering, this is the data that I will be working with.
 ![data_data_preparation_02](https://github.com/user-attachments/assets/3140aa0c-7ad3-4168-84dc-6a35c96555f0)
 
+Let's move on to the next analysis process so the data can be more useful and meaningful.
+
 ## Data Analysis Process: Analyze :mag:
+
+In order to analyze the population trend on the older adults (aged 60 and above) in Malaysia, I have to perform several calculations to make sense of the data.
+
+### 1. The total population on the older adults (aged 60 and above) from 2014-2024
+By using the following query, I am able to calculate the total population of the older adults (aged 60 and above) of each year.
+![sql_data_analysis_01](https://github.com/user-attachments/assets/395dcb0e-079a-472a-bb17-2fa55825bd6a)
+
+This is the result.
+![data_data_analysis_01](https://github.com/user-attachments/assets/35dc6d53-1559-4b0b-8b4b-a2c5c15c4bb4)
+
+
 ### Key Tasks
 * Aggregate your data so it’s useful and accessible.
 * Organize and format your data.
