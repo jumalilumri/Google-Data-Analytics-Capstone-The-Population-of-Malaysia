@@ -40,7 +40,7 @@ The result.
 ![data_data_analysis_01](https://github.com/user-attachments/assets/35dc6d53-1559-4b0b-8b4b-a2c5c15c4bb4)
 
 #### 2. The differences of the older adults (aged 60 and above) total population from year to year
-I want to see if there are any trend or changes on the total population of each year. Therefore, I use the following query to investigate.
+I want to see if there are any trend or changes on the total population of each year. To analyze this I first need to calculate the differences and the percentages for each year. The query is as follow:
 ![sql_data_analysis_02](https://github.com/user-attachments/assets/ec2cf789-b4f1-42b8-acd7-a74652dd8576)
 
 The result.
