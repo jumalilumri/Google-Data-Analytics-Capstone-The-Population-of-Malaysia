@@ -66,18 +66,20 @@ The result.
 For this analysis process, I used Tableau to visualize my findings.
 
 Here is the dashboard for this analysis.
-![Dashboard 1](https://github.com/user-attachments/assets/6a984a34-bff2-44c8-ab3a-e0c473cebfcd)
+![Dashboard 1](https://github.com/user-attachments/assets/ee32b661-3d13-47f3-b9b9-ea30d1130e72)
+
 
 For more details and interactive experience using the dashboard, please access it [here](https://public.tableau.com/views/PopulationtrendsofolderadultsinMalaysia2014-2024/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Data Analysis Process: Act :rocket:
-### Key Tasks
-* Create your portfolio.
-* Add your case study.
-* Practice presenting your case study to a friend or family member.
+### Insights
+1. The population of Malaysia is growing and if the trend continues, the group age 60 and above will be a big population in Malaysia.
+2. Potentially higher demand on healthcare services especially for older people products and services.
+3. Likely to impact workforce for those who struggle financially after retirement.
 
-### Deliverables
-Your top high-level insights based on your analysis
-Based on what you discover, a list of additional deliverables you think would be helpful to include for further exploration
+### Recommendation
+1. Government should consider few factors moving forward like healthcare capacity, workforce, budget, and policy around the growth of older generation.
+2. Private healthcare should consider scaling up their services.
+3. Business should take advantage in providing product and services catering to the older population.
 
 ## Thank you :pray:
