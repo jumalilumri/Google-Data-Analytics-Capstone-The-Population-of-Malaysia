@@ -22,11 +22,11 @@ In this step, I extract the required year which is from 2014 to 2024. I also pop
 After running the query, this is how it looks like.
 ![data_data_preparation](https://github.com/user-attachments/assets/c12e8fae-801d-49ff-ba5a-d22a6a3c2048)
 
-#### 2. Next, I need the data for the specific age group. For this analysis, I need the older adult (aged 60 and above). Therefore, I filtered only the necessary age group which are 60-64, 65-69, 70-74, 75-79, 80-84, 80+.
-![sql_data_preparation_02](https://github.com/user-attachments/assets/5c4ff01e-a790-4724-a6c0-2f13e6a2a94f)
+#### 2. Next, I need the data for the specific age group. For this analysis, I need the older adult (aged 60 and above). Therefore, I filtered only the necessary age group which are 60-64, 65-69, 70-74, 75-79, 80-84, 85+.
+![sql_data_preparation_02](https://github.com/user-attachments/assets/de51192e-1ce3-418c-b40f-258cb192d78a)
 
 After filtering, this is the data that I will be working with.
-![data_data_preparation_02](https://github.com/user-attachments/assets/3140aa0c-7ad3-4168-84dc-6a35c96555f0)
+![data_data_preparation_02](https://github.com/user-attachments/assets/c21c1961-9d21-4601-8f5f-63a7af7e6abd)
 
 Let's move on to the next analysis process so the data can be more useful and meaningful.
 
@@ -39,28 +39,27 @@ By using the following query, I am able to calculate the total population of the
 ![sql_data_analysis_01](https://github.com/user-attachments/assets/395dcb0e-079a-472a-bb17-2fa55825bd6a)
 
 The result.
-![data_data_analysis_01](https://github.com/user-attachments/assets/35dc6d53-1559-4b0b-8b4b-a2c5c15c4bb4)
+![data_data_analysis_01](https://github.com/user-attachments/assets/2c0e3713-8455-4508-9ca8-3b0f3bb3f1c9)
 
 #### 2. The differences of the older adults (aged 60 and above) total population from year to year
 I want to see if there are any trends or changes on the total population of each year. To analyze this I first need to calculate the differences and the percentages for each year. The query is as follow:
 ![sql_data_analysis_02](https://github.com/user-attachments/assets/ec2cf789-b4f1-42b8-acd7-a74652dd8576)
 
 The result.
-![data_data_analysis_02](https://github.com/user-attachments/assets/18dbcfa9-981b-4601-a20e-5820d9a65c2b)
+![data_data_analysis_02](https://github.com/user-attachments/assets/98564e34-6a28-497c-bcf5-122a9a11e3f4)
 
 #### 3. The population of the older adults (aged 60 and above) by groups for each year
 I also want to see if there are any trends or patterns on the population by age groups for each year. I use the following query to find out:
 ![sql_data_analysis_03](https://github.com/user-attachments/assets/be0823ce-d344-498e-994a-24594eeb3d5d)
 
 The result.
-![data_data_analysis_03](https://github.com/user-attachments/assets/f6e195cf-e384-46ec-b711-e36b14c1984e)
-
+![data_data_analysis_03](https://github.com/user-attachments/assets/c1345677-0db9-4ce0-82a7-00ee28422593)
 
 #### Summary of analysis
-
-
-### Deliverables
-A summary of your analysis
+1. The total of population for older adults (aged 60 and above) in Malaysia is steadily increasing.
+2. Based on the differences of the older adults total population from year to year, the average growth is around 3.9%.
+3. From my observation, there's a decline in 2020, possibly due to the Covid-19 pandemic.
+4. 
 
 ## Data Analysis Process: Share :bar_chart:
 ### Key Tasks
