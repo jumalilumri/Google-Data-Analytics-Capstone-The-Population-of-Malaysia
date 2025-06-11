@@ -6,17 +6,20 @@ For my Google Data Analytics Capstone project, I choose Case Study 3: Follow you
 The business statement for this capstone is to analyze population trends across age groups in Malaysia from 2014 to 2024 to identify shifts that impact healthcare service demand. This analysis aims to support healthcare providers—including government agencies, private hospitals, and healthtech firms—in planning for age-specific services, such as elder care, chronic disease management, and pediatric care.
 
 ## Data Analysis Process: Prepare :construction_worker:
-For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia). The credibility of this data is high because it was released directly from a government agency. The data contains the population of Malaysia by sex, age group and ethnicity recorded from 1970 to 2024. Based on my business statement, this analysis will focused on the age groups from 2014 to 2024. Therefore, I would need to do further preparation to my data.
-
-The first step is to extract the required data for the analysis. I will be using SQL for this task.
-![Image](https://github.com/user-attachments/assets/41d8e517-a5e3-4760-b224-b10200fa5854)
-
-After extracting the required data, this is how it looks like.
-![Image](https://github.com/user-attachments/assets/3be43d05-bdbd-4a75-8c8b-fa20bfd47795)
-
-
+For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia). The credibility of this data is high because it was released directly from a government agency. The data contains the population of Malaysia by sex, age group and ethnicity recorded from 1970 to 2024. Once I downloaded the data from the website I move to the next data analysis process.
 
 ## Data Analysis Process: Process :factory:
+
+Based on my business statement, this analysis will focused on the age groups from 2014 to 2024. Therefore, I would need to process my data to match the requirement which are age group from the year 2014 to 2024.
+
+My first step is to extract the requirement.
+![sql_data_preparation](https://github.com/user-attachments/assets/68aba32b-bada-4a03-b12e-537086289abb)
+
+In this step, I extract the required year which is from 2014 to 2024. I also populate only the overall for sex and ethnicity because my focus is on the age group.
+
+After extracting the required data, this is how it looks like.
+![data_data_preparation](https://github.com/user-attachments/assets/c12e8fae-801d-49ff-ba5a-d22a6a3c2048)
+
 
 * Check the data for errors.
 * Choose your tools.
