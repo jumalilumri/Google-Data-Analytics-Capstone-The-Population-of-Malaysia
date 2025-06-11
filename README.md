@@ -56,12 +56,8 @@ The result.
 ![data_data_analysis_03](https://github.com/user-attachments/assets/f6e195cf-e384-46ec-b711-e36b14c1984e)
 
 
-### Key Tasks
-* Aggregate your data so it’s useful and accessible.
-* Organize and format your data.
-* Perform calculations.
-* Document your calculations to keep track of your analysis steps.
-* Identify trends and relationships.
+#### Summary of analysis
+
 
 ### Deliverables
 A summary of your analysis
