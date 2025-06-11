@@ -63,14 +63,12 @@ The result.
 5. A decline in 2020 on all age group most likely due to the Covid-19 pandemic.
 
 ## Data Analysis Process: Share :bar_chart:
-### Key Tasks
-* Determine the best way to share your findings.
-* Create effective data visualizations.
-* Present your findings.
-* Ensure your work is accessible.
+For this analysis process, I used Tableau to visualize my findings.
 
-### Deliverables
-Supporting visualizations and key findings
+Here is the dashboard for this analysis.
+![Dashboard 1](https://github.com/user-attachments/assets/6a984a34-bff2-44c8-ab3a-e0c473cebfcd)
+
+For more details and interactive experience using the dashboard, please access it [here](https://public.tableau.com/views/PopulationtrendsofolderadultsinMalaysia2014-2024/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Data Analysis Process: Act :rocket:
 ### Key Tasks
