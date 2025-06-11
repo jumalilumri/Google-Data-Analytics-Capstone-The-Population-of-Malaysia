@@ -8,6 +8,8 @@ The business statement for this capstone is to analyze population trends of olde
 ## Data Analysis Process: Prepare :construction_worker:
 For this analysis, I will be using the public data available from government agency, the Department of Statistics Malaysia. The link can be found [here](https://open.dosm.gov.my/data-catalogue/population_malaysia). The credibility of this data is high because it was released directly by a government agency. The data contains the population of Malaysia by sex, age group and ethnicity recorded from 1970 to 2024. Once I downloaded the data from the website I move to the next data analysis process.
 
+**Disclaimer:** The format of the data from the original source for population is formatted as **Population('000)**. The format applies for this analysis.
+
 ## Data Analysis Process: Process :factory:
 
 Based on my business statement, this analysis will focused on the older adults (aged 60 and above) age group from 2014 to 2024. Therefore, I would need to process my data to match the requirement.
@@ -40,13 +42,18 @@ The result.
 ![data_data_analysis_01](https://github.com/user-attachments/assets/35dc6d53-1559-4b0b-8b4b-a2c5c15c4bb4)
 
 #### 2. The differences of the older adults (aged 60 and above) total population from year to year
-I want to see if there are any trend or changes on the total population of each year. To analyze this I first need to calculate the differences and the percentages for each year. The query is as follow:
+I want to see if there are any trends or changes on the total population of each year. To analyze this I first need to calculate the differences and the percentages for each year. The query is as follow:
 ![sql_data_analysis_02](https://github.com/user-attachments/assets/ec2cf789-b4f1-42b8-acd7-a74652dd8576)
 
 The result.
 ![data_data_analysis_02](https://github.com/user-attachments/assets/18dbcfa9-981b-4601-a20e-5820d9a65c2b)
 
 #### 3. The population of the older adults (aged 60 and above) by groups for each year
+I also want to see if there are any trends or patterns on the population by age groups for each year. I use the following query to find out:
+![sql_data_analysis_03](https://github.com/user-attachments/assets/be0823ce-d344-498e-994a-24594eeb3d5d)
+
+The result.
+![data_data_analysis_03](https://github.com/user-attachments/assets/f6e195cf-e384-46ec-b711-e36b14c1984e)
 
 
 ### Key Tasks
