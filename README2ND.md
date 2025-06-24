@@ -126,7 +126,8 @@ I used the View command to show the result.
 From the result, it shows that the young age group population of 0-4, 10-14,15-19,20-24 are shrinking. While the young age group population of 5-9 is growing.
 
 
-3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
+#### 3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
+
 4. What are the implications for pediatric and adolescent healthcare services?
 5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
    
@@ -134,7 +135,7 @@ From the result, it shows that the young age group population of 0-4, 10-14,15-1
 
 #### Summary of analysis
 1. The total of population for young age group (0-24) population in Malaysia has declined 2.70% between the year 2014 to 2024.
-2. The young age group of 0-4 population shows the highest decline of 8.2$. Meanwhile, the young age group of 5-9 populations shows small inclination of 1.45%.
+2. The young age group of 0-4 population shows the highest decline of 8.2%. Meanwhile, the young age group of 5-9 populations shows small inclination of 1.45%.
 
 ## Data Analysis Process: Share :bar_chart:
 For this analysis process, I used the ggplot function available in the Tidyverse package. 
