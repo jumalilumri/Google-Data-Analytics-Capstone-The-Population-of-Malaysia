@@ -6,7 +6,7 @@ For my Google Data Analytics Capstone project, I choose Case Study 3: Follow you
 The business statement for this capstone is to analyze population trends of Malaysia’s younger population (ages 0–24) from 2014 to 2024 to assess growth and potential demand for child and adolescent healthcare services. This analysis aims to support healthcare planners, private hospitals, and public health stakeholders in developing age-appropriate care models, educational programs, and preventive health strategies.
 
 There are few questions that I would like to focus and explore:
-1. How has the population of the 0–24 age group changed between 2010 and 2020?
+1. How has the population of the 0–24 age group changed between 2014 and 2024?
 2. Are any specific age brackets (e.g., 0–4 or 15–19) growing or shrinking?
 3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
 4. What are the implications for pediatric and adolescent healthcare services?
@@ -92,10 +92,40 @@ percent_change <- (population_2024 - population_2014) / population_2014 * 100
 Here is the result.
 ![image](https://github.com/user-attachments/assets/f19dd08c-77de-410c-8b56-41d775cae381)
 
-From the result it shows that the young age group population decreased 2.70% after rounding.
+From the result it shows that the young age group population declined 2.70% after rounding.
 
 
-2. Are any specific age brackets (e.g., 0–4 or 15–19) growing or shrinking?
+#### 2. Are any specific age brackets (e.g., 0–4 or 15–19) growing or shrinking?
+To answer this questions, I need to calculate the total population based on year and age group.
+First, I summarize the total for each age group by year.
+```
+age_trends <-young_data %>%
+  mutate(year = lubridate::year(date)) %>%
+  group_by(year,age) %>%
+  summarise(total_population = sum(population, na.rm = TRUE), .groups = "drop")
+```
+By using the View command, this is the result.
+![image](https://github.com/user-attachments/assets/176da131-d325-4535-8eaf-273c4ad403d4)
+
+Next, I need to compare the young age group population from the year 2014 to 2024. First, I extract the required data from the year 2014 and 2024.
+```
+age_2014 <- age_trends %>% filter(year == 2014)
+age_2024 <- age_trends %>% filter(year == 2024)
+```
+Then, I use the table join function and calculate the difference in percentage.
+```
+question_two <- age_2014 %>%
+  inner_join(age_2024,by = "age", suffix = c("_2014", "_2024")) %>%
+  mutate(
+    percent_change = (total_population_2024 - total_population_2014) / total_population_2014 * 100
+  )
+```
+I used the View command to show the result.
+![image](https://github.com/user-attachments/assets/deef45c9-bfe0-4e22-a331-6471095bfc6c)
+
+From the result, it shows that the young age group population of 0-4, 10-14,15-19,20-24 are shrinking. While the young age group population of 5-9 is growing.
+
+
 3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
 4. What are the implications for pediatric and adolescent healthcare services?
 5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
@@ -103,30 +133,22 @@ From the result it shows that the young age group population decreased 2.70% aft
 
 
 #### Summary of analysis
-1. The total of population for older adults (aged 60 and above) in Malaysia is steadily increasing.
-2. Based on the differences of the older adults total population from year to year, the average growth is around 3.9%.
-3. The age group 60-64 is the highest and the age group 85+ is the lowest.
-4. A steady increase of population on all age group since 2014.
-5. A decline in 2020 on all age group most likely due to the Covid-19 pandemic.
+1. The total of population for young age group (0-24) population in Malaysia has declined 2.70% between the year 2014 to 2024.
+2. The young age group of 0-4 population shows the highest decline of 8.2$. Meanwhile, the young age group of 5-9 populations shows small inclination of 1.45%.
 
 ## Data Analysis Process: Share :bar_chart:
-For this analysis process, I used Tableau to visualize my findings.
+For this analysis process, I used the ggplot function available in the Tidyverse package. 
 
-Here is the dashboard for this analysis.
-![Dashboard 1](https://github.com/user-attachments/assets/ee32b661-3d13-47f3-b9b9-ea30d1130e72)
+#### Question 1
+![image](https://github.com/user-attachments/assets/494a0de6-3141-4718-9eeb-0513f48711f8)
 
 
-For more details and interactive experience using the dashboard, please access it [here](https://public.tableau.com/shared/D27SZSJHY?:display_count=n&:origin=viz_share_link).
 
 ## Data Analysis Process: Act :rocket:
 ### Insights
-1. The population of Malaysia is growing and if the trend continues, the group age 60 and above will be a big population in Malaysia.
-2. Potentially higher demand on healthcare services especially for older people products and services.
-3. Likely to impact workforce for those who struggle financially after retirement.
+1. 
 
 ### Recommendation
-1. Government should consider few factors moving forward like healthcare capacity, workforce, budget, and policy around the growth of older generation.
-2. Private healthcare should consider scaling up their services.
-3. Business should take advantage in providing product and services catering to the older population.
+1. 
 
 ## Thank you :pray:
