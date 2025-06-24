@@ -34,34 +34,63 @@ Next, I need to define the specific age group for easy reference. For this analy
 ```
 young_ages <- c("0-4","5-9", "10-14", "15-19", "20-24")
 ```
-
-#### 2. Next, I need the data for the specific age group. For this analysis, I need the older adult (aged 60 and above). Therefore, I filtered only the necessary age group which are 60-64, 65-69, 70-74, 75-79, 80-84, 85+.
-
+Now, I'm ready to extract the required data for this analysis. I'm using the filter function.
+```
+young_data <- data%>%
+  filter(
+    year(date) >= 2014 & year(date) <= 2024,
+    sex == "both",
+    age %in% young_ages,
+    ethnicity == "overall"
+  )
+```
 
 ## Data Analysis Process: Analyze :mag:
 
-In order to analyze the population trend on the older adults (aged 60 and above) in Malaysia, I have to perform several calculations to make sense of the data.
+In this process, I will be analyzing the data based on the earlier given questions.
 
-#### 1. The total population on the older adults (aged 60 and above) from 2014-2024
-By using the following query, I am able to calculate the total population of the older adults (aged 60 and above) of each year.
-![sql_data_analysis_01](https://github.com/user-attachments/assets/395dcb0e-079a-472a-bb17-2fa55825bd6a)
+#### 1. How has the population of the 0–24 age group changed between 2014 and 2024?
+In order to answer the question, I need to summarize the population from the year 2014 to 2024. 
+```
+question_one <- young_data %>%
+  mutate(year = year(date)) %>%
+  group_by(year) %>%
+  summarise(total_young_population = sum(population, na.rm = TRUE), .groups = "drop")
+```
+This is the result.
+```
+# A tibble: 11 × 2
+    year total_young_population
+   <dbl>                  <dbl>
+ 1  2014                 13809.
+ 2  2015                 13848 
+ 3  2016                 13867.
+ 4  2017                 13844.
+ 5  2018                 13810.
+ 6  2019                 13691.
+ 7  2020                 13478.
+ 8  2021                 13379.
+ 9  2022                 13275.
+10  2023                 13385.
+11  2024                 13436.
+```
+In order to calculate any changes in the group age population between 2014 to 2024, I will perform a simple calculation to determine the changes in percentage. To do so, I used the following steps.
 
-The result.
-![data_data_analysis_01](https://github.com/user-attachments/assets/2c0e3713-8455-4508-9ca8-3b0f3bb3f1c9)
+I set the values for the population in 2014 and 2024.
+```
+population_2014 <- question_one$total_young_population[question_one$year == 2014]
+population_2024 <- question_one$total_young_population[question_one$year == 2024]
+```
+Next, I perform a simple calculation and this is the result.
+![image](https://github.com/user-attachments/assets/fb0bec89-3b6b-4487-ae23-d61cdc627649)
 
-#### 2. The differences of the older adults (aged 60 and above) total population from year to year
-I want to see if there are any trends or changes on the total population of each year. To analyze this I first need to calculate the differences and the percentages for each year. The query is as follow:
-![sql_data_analysis_02](https://github.com/user-attachments/assets/ec2cf789-b4f1-42b8-acd7-a74652dd8576)
 
-The result.
-![data_data_analysis_02](https://github.com/user-attachments/assets/98564e34-6a28-497c-bcf5-122a9a11e3f4)
+2. Are any specific age brackets (e.g., 0–4 or 15–19) growing or shrinking?
+3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
+4. What are the implications for pediatric and adolescent healthcare services?
+5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
+   
 
-#### 3. The population of the older adults (aged 60 and above) by groups for each year
-I also want to see if there are any trends or patterns on the population by age groups for each year. I use the following query to find out:
-![sql_data_analysis_03](https://github.com/user-attachments/assets/be0823ce-d344-498e-994a-24594eeb3d5d)
-
-The result.
-![data_data_analysis_03](https://github.com/user-attachments/assets/c1345677-0db9-4ce0-82a7-00ee28422593)
 
 #### Summary of analysis
 1. The total of population for older adults (aged 60 and above) in Malaysia is steadily increasing.
