@@ -50,7 +50,7 @@ young_data <- data%>%
 In this process, I will be analyzing the data based on the earlier given questions.
 
 #### 1. How has the population of the 0–24 age group changed between 2014 and 2024?
-In order to answer the question, I need to summarize the population from the year 2014 to 2024. 
+In order to answer the question, I need to summarize the young age group population from the year 2014 to 2024. 
 ```
 question_one <- young_data %>%
   mutate(year = year(date)) %>%
@@ -74,15 +74,25 @@ This is the result.
 10  2023                 13385.
 11  2024                 13436.
 ```
-In order to calculate any changes in the group age population between 2014 to 2024, I will perform a simple calculation to determine the changes in percentage. To do so, I used the following steps.
+In order to calculate any changes in the young age group population between 2014 to 2024, I will perform a simple calculation to determine the changes in percentage. To do so, I used the following steps.
 
 I set the values for the population in 2014 and 2024.
 ```
 population_2014 <- question_one$total_young_population[question_one$year == 2014]
 population_2024 <- question_one$total_young_population[question_one$year == 2024]
 ```
-Next, I perform a simple calculation and this is the result.
+Heres is the result.
 ![image](https://github.com/user-attachments/assets/fb0bec89-3b6b-4487-ae23-d61cdc627649)
+
+Next, I need to perform a simple calculation to identify the difference in percentage.
+```
+percent_change <- (population_2024 - population_2014) / population_2014 * 100
+```
+
+Here is the result.
+![image](https://github.com/user-attachments/assets/f19dd08c-77de-410c-8b56-41d775cae381)
+
+From the result it shows that the young age group population decreased 2.70% after rounding.
 
 
 2. Are any specific age brackets (e.g., 0–4 or 15–19) growing or shrinking?
