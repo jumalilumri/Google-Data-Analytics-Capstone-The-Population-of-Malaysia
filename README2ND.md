@@ -140,9 +140,47 @@ From the result, it shows that the young age group population of 0-4, 10-14,15-1
 For this analysis process, I used the ggplot function available in the Tidyverse package. 
 
 #### Question 1
+To generate the visualization for the first question. I use the following command.
+```
+ggplot(question_one, aes(x = year, y = total_young_population)) +
+  geom_line(color = "seagreen", size = 1.2) +
+  geom_point(color = "darkgreen", size = 2) +
+  scale_y_continuous(limits = c(0, 30000), expand = c(0, 0)) +
+  labs(
+    title = "Population Trend of Age Group 0–24 in Malaysia (2014–2024)",
+    x = "Year",
+    y = "Total Population (Ages 0–24) '000"
+  ) +
+    annotate(
+      "text",
+      x = 2019,
+      y = 20000,
+      label = percent_change_label,
+      size = 4.5,
+      color = "black",
+      hjust = 0
+    ) +
+  theme_minimal()
+```
+Here is the result.
 ![image](https://github.com/user-attachments/assets/494a0de6-3141-4718-9eeb-0513f48711f8)
 
+#### Question 2
+To generate the visualization for this question, I used the following command.
+```
+ggplot(question_two, aes(x = age, y = percent_change, fill = percent_change)) +
+  geom_col() +
+  labs(
+    title = "Percent Change in Population by Age Group (2014-2024)",
+    x = "Age Group",
+    y = "Percent Change (%)"
+  ) +
+theme_minimal()
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/94e2c477-3517-48f8-b27a-0ddb31fcf151)
 
+### Question 3
 
 ## Data Analysis Process: Act :rocket:
 ### Insights
