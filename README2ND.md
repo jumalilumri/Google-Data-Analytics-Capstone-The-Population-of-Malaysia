@@ -297,9 +297,14 @@ Here is the result.
 
 ## Data Analysis Process: Act :rocket:
 ### Insights
-1. 
+1. The young population in Malaysia is in a consistent decline.
+2. The birthrade in Malaysia is in decline.
+3. Healthcare services targeting the young population must be prepared for decrease in demand.
+4. Covid-19 may have accelerate the decline of the young population in Malaysia.
 
 ### Recommendation
-1. 
+1. The healthcare sector should consider to reassess the resources and allocation of their services.
+2. All parties should consider to focus on adolescent and young adult health services.
+3. Government should focus on family building policy to tackle the declining birthrate.
 
 ## Thank you :pray:
