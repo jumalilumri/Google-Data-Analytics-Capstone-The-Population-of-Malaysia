@@ -127,6 +127,67 @@ From the result, it shows that the young age group population of 0-4, 10-14,15-1
 
 
 #### 3. What proportion of Malaysia’s total population does this group make up now vs. 10 years ago?
+In order to answer this question, there are several steps that I need to complete.
+
+First, I need to find out the total population of Malaysia for the year of 2014 and 2024. In order to do that, I add a year column for easier observation using the following method.
+```
+population_by_year <- data %>%
+  mutate(date = as.Date(date),
+         year = lubridate::year(date))
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/6c3540a8-8905-4268-aa26-d71cf52f9db3)
+
+Next, I sum the total population for each year by filtering the sex, age and ethnicity.
+```
+total_pop <- population_by_year %>%
+  filter(sex == "both", age == "overall", ethnicity == "overall") %>%
+  group_by(year) %>%
+  summarise(total_population = sum(population, na.rm = TRUE), .groups = "drop")
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/656ecb85-9030-4d49-993c-4095a142753e)
+
+Now, I need to find the total of young population for each year. The step is similar to the answer for question #1. 
+
+Defining the young population.
+```
+young_ages <- c("0-4","5-9", "10-14", "15-19", "20-24")
+```
+Then, filter the target range for the young population only.
+```
+young_pop <- population_by_year %>%
+  filter(sex == "both", ethnicity == "overall", age %in% young_ages) %>%
+  group_by(year) %>%
+  summarise(young_population = sum(population, na.rm = TRUE), .groups = "drop")
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/1680d7f4-fb94-4d1e-bb25-df0642af30c5)
+
+Next, I need to join the tables and compute the proportion for each year.
+```
+proportion_df <- young_pop %>%
+  inner_join(total_pop, by = "year") %>%
+  mutate(proportion = round((young_population / total_population) *100,2))
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/1dd814ad-a07a-4a19-a309-c87e60531969)
+
+The final step, I extract the proportion for the year 2014 and 2024 to answer the question.
+```
+proportion_df %>%
+  filter(year %in% c(2014,2024))
+```
+
+Here is the answer.
+```
+# A tibble: 2 × 4
+   year young_population total_population proportion
+  <dbl>            <dbl>            <dbl>      <dbl>
+1  2014           13809.           30708.       45.0
+2  2024           13436.           34059.       39.4
+```
+Based on the result, the proportion of the young population of Malaysia in Malaysia in 2024 is 39.4%. While in 2014, the proportion of young population was 45.0%.
 
 4. What are the implications for pediatric and adolescent healthcare services?
 5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
@@ -136,6 +197,7 @@ From the result, it shows that the young age group population of 0-4, 10-14,15-1
 #### Summary of analysis
 1. The total of population for young age group (0-24) population in Malaysia has declined 2.70% between the year 2014 to 2024.
 2. The young age group of 0-4 population shows the highest decline of 8.2%. Meanwhile, the young age group of 5-9 populations shows small inclination of 1.45%.
+3. The proportion of young population in Malaysia has decreased by 5.6% between the year 2014 to 2024.
 
 ## Data Analysis Process: Share :bar_chart:
 For this analysis process, I used the ggplot function available in the Tidyverse package. 
