@@ -244,6 +244,24 @@ Here is the result.
 ![image](https://github.com/user-attachments/assets/94e2c477-3517-48f8-b27a-0ddb31fcf151)
 
 ### Question 3
+To generate the visualization for this question, I used the following command.
+```
+proportion_df %>%
+  filter(year %in% c(2014, 2024)) %>%
+  ggplot(aes(x = factor(year), y = proportion)) +
+  geom_col(fill = "steelblue") +
+  geom_text(aes(label = paste0(proportion, "%")), vjust = -0.5, size = 5) +
+  labs(
+    title = "Young Population in % of Malaysia Total Population",
+    x = "Year",
+    y = "Percentage (%)"
+  ) +
+  ylim(0, 100) +
+  theme_minimal()
+```
+
+Here is the result.
+![image](https://github.com/user-attachments/assets/20417f59-ba85-4d09-b876-be6cf0fc9bec)
 
 ## Data Analysis Process: Act :rocket:
 ### Insights
