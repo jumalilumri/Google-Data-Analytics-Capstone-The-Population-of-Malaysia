@@ -189,15 +189,28 @@ Here is the answer.
 ```
 Based on the result, the proportion of the young population of Malaysia in Malaysia in 2024 is 39.4%. While in 2014, the proportion of young population was 45.0%.
 
-4. What are the implications for pediatric and adolescent healthcare services?
-5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
-   
+### 4. What are the implications for pediatric and adolescent healthcare services?
+Based on the previous data, the young population in Malaysia shows 2.70% declined between the year 2014 to 2024. The age group of 0-4 of the population is the highest group affected. Most likely the pediatric and healthcare services will likely show decrease in demand.
+
+### 5. Are there visible effects or trends around COVID-19 (2020) on this age group’s population reporting?
+In order to answer this question, I have to track the differences in the young total population for each year. By using the previous table, I just have to add a new column calculating the differences.
+```
+question_five <- young_pop %>%
+  arrange(year) %>%
+  mutate(pct_change = (young_population - lag(young_population)) / lag(young_population) * 100)
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/3db5101f-8a38-429d-9529-ebc3c4afc51e)
+
+From the result, it shows that the young population has shown a slight decline even before the year 2020. In 2020, it shows a 1.55$ decline, a higher decline compared to before and after the following years. The COVID-19 (2020) may have affected the trend on the young population in Malaysia.
 
 
 #### Summary of analysis
 1. The total of population for young age group (0-24) population in Malaysia has declined 2.70% between the year 2014 to 2024.
 2. The young age group of 0-4 population shows the highest decline of 8.2%. Meanwhile, the young age group of 5-9 populations shows small inclination of 1.45%.
 3. The proportion of young population in Malaysia has decreased by 5.6% between the year 2014 to 2024.
+4. The pediatric and adolescent healthcare services will likely show decrease in demand if the trend continues.
+5. The COVID-19 (2020) may have affected the trend on the young population in Malaysia by contributing higher percentage of decline for the year 2020.
 
 ## Data Analysis Process: Share :bar_chart:
 For this analysis process, I used the ggplot function available in the Tidyverse package. 
@@ -262,6 +275,25 @@ proportion_df %>%
 
 Here is the result.
 ![image](https://github.com/user-attachments/assets/20417f59-ba85-4d09-b876-be6cf0fc9bec)
+
+### Question 5
+To generate the visualization for this question, I used the following command.
+```
+ggplot(
+  young_pop %>% filter(year >= 2018 & year <= 2022),
+  aes(x = year, y = young_population)
+) +
+  geom_line(color = "navy", size = 1.2) +
+  geom_vline(xintercept = 2020, linetype = "dashed", color = "red") +
+  labs(
+    title = "Young Population Trend Pre & Post COVID-19",
+    x = "Year",
+    y = "Total Population ('000)"
+  ) +
+  theme_minimal()
+```
+Here is the result.
+![image](https://github.com/user-attachments/assets/d0866a21-9d2f-44ea-8f44-90ca47c2e2b6)
 
 ## Data Analysis Process: Act :rocket:
 ### Insights
